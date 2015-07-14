@@ -1,0 +1,77 @@
+body {
+  font-family: Lato, Geneva, sans-serif;
+  border-top: 5px solid #85AE9A;
+  margin: 0px auto;
+  font-size: 14px;
+  color: #3D1F00;
+  background: #f3e9df;
+}
+
+a {
+  color: inherit;
+}
+
+header {
+  font-family: 'Delius Swash Caps', cursive;
+  background: #9DCDB5;
+}
+
+header a:hover {
+  transition: background-color 0.3s ease;
+  background-color: #f3e9df;
+}
+
+#nav a:hover {
+  transition: background-color 0.3s ease;
+  background-color: #f3e9df;
+  color: #3D1F00;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Delius Swash Caps', cursive;
+  padding: 10px;
+  font-weight: bold;
+  color: #3D1F00;
+}
+
+h2, h4 {
+  font-family: 'Delius Swash Caps', cursive;
+  font-weight: bold;
+  color: #3D1F00;
+}
+
+canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin: 25px auto 75px auto;
+    display: block;
+    width: 800px;
+    border: 5px solid #e7dad4;
+    background-color: inherit;
+}
+
+.container-canvas {
+  margin: 0 auto;
+  width: 800px;
+}
+
+
+button {
+
+}
+
+#start {
+
+}
+
+#stop {
+
+}
+
+footer {
+  background: #9DCDB5;
+  padding: 10px;
+  border-bottom: 5px solid #85AE9A;
+  margin: 10px 0 10px 0;
+}
