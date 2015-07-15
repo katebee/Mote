@@ -1,4 +1,5 @@
 function draw() {
+  console.log("starts at draw");
   var canvas = document.getElementById('canvas');
   if (canvas.getContext) {
     var ctx = canvas.getContext('2d');
@@ -21,5 +22,6 @@ function draw() {
 }
 
 $(document).ready(function() {
+    console.log("document is ready");
   $("#start").on("click", draw());
 });
