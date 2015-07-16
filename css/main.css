@@ -23,7 +23,9 @@ header a:hover {
 
 #nav a:hover {
   transition: background-color 0.3s ease;
+  transition: border-color 0.3s ease;
   background-color: #f3e9df;
+  border-color: #f3e9df;
   color: #3D1F00;
 }
 
