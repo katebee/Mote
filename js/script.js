@@ -1,8 +1,14 @@
+
+
+//SCRIPT FOR CANVAS DISPLAY
+
 function draw() {
   console.log("starts at draw");
   var canvas = document.getElementById('canvas');
   if (canvas.getContext) {
     var ctx = canvas.getContext('2d');
+    //var canvasHeight = ;
+    //var canvasWidth = ;
 
     var mote = new Path2D();
     ctx.beginPath();
@@ -30,7 +36,10 @@ function draw() {
   }
 }
 //use timeOut for 20ms to refresh
+
 $(document).ready(function() {
-    console.log("document is ready");
+
+  console.log("document is ready");
   $("#start").on("click", draw());
-});
+  
+ });
