@@ -41,5 +41,7 @@ $(document).ready(function() {
 
   console.log("document is ready");
   $("#start").on("click", draw());
-  
- });
+  $('#title-link').smoothScroll({offset: -40});
+  $('#about-link').smoothScroll({offset: -40});
+  $('#contact-link').smoothScroll({offset: -40});
+});

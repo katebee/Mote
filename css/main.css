@@ -1,21 +1,21 @@
 body {
   font-family: Lato, Geneva, sans-serif;
-  border-top: 5px solid #85AE9A;
   margin: 0px auto;
   font-size: 14px;
   color: #3D1F00;
   background: #f3e9df;
-  padding-bottom: 60px;
+  padding-top: 55px;
 }
 
 a {
   color: inherit;
 }
 
-header {
+.header {
   font-family: 'Delius Swash Caps', cursive;
   background: #9DCDB5;
-}
+  border-top: 5px solid #85AE9A;
+} /* using class rather than html element, otherwise the border does not show */
 
 header a:hover {
   transition: background-color 0.3s ease;
@@ -83,9 +83,13 @@ button {
 
 }
 
+article {
+  padding: 20px;
+}
+
 #footer {
   background: #9DCDB5;
   padding: 10px;
   border-bottom: 5px solid #85AE9A;
-  margin-top: 10px;
+  margin: 10px 0 0 0;
 }
