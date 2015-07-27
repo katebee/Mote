@@ -9,9 +9,9 @@
     <meta name="description" content="">
     <meta name="author" content="Kate Whalen">
     <meta name="keywords" content="kate whalen">
-    <link rel="shortcut icon" href="assets/img/favicon.ico">
+    <!-- <link rel="shortcut icon" href="assets/img/favicon.ico"> -->
 
-    <title>Goo: Genetics in JavaScript</title>
+    <title>Genetics in JavaScript</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -26,7 +26,7 @@
   <body>
 
     <!-- Static navbar -->
-    <header class=" header navbar-fixed-top">
+    <header class="header navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -40,7 +40,6 @@
           <ul id ="nav" class="nav navbar-nav navbar-right">
             <li><a href="#title" id="title-link">Mote</a></li>
             <li><a href="#about" id="about-link">About</a></li>
-            <!-- <li><a href="blog.html">Blog</a></li> -->
             <li><a href="#footer" id="contact-link">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
@@ -48,16 +47,17 @@
     </header>
 
     <div id="title">
-      <h1>Genetics and JavaScript</h1>
+      <h1>Genetics in JavaScript</h1>
     </div>
 
     <div class="container-canvas img-responsive">
-      <canvas id="canvas" width="800" height="400">Oh no! Your browser does not support canvas!</canvas>
+      <canvas id="mote-canvas" width="800" height="600">Oh no! Your browser does not support canvas!</canvas>
     </div>
 
     <div class="container">
       <button id="start">Load DNA</button>
       <button id="stop" >Reset</button>
+      <div id='clock'></div>
     </div>
 
     <div class="container">
@@ -101,21 +101,23 @@
   		</div>
     </nav>
 
-    <!-- Scripts placed at the end of the document so the pages load faster -->
+    <!--Scripts placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 
-    <!-- Bootstrap core JavaScript-->
-  	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <!--Bootstrap core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-    <!-- Smoothly moves page up and down, on mousewheel or touch -->
+    <!--Smoothly moves page up and down, on mousewheel or touch -->
     <script type="text/javascript" src="js/SmoothScroll.js"></script>
 
-    <!-- Smooth scroll to a location on the page -->
+    <!--Smooth scroll to a location on the page -->
     <script type="text/javascript" src="js/jquery.smooth-scroll.js"></script>
 
-    <!-- For all things Mote, including genetics, canvas and animation -->
+    <!--Not currently in use <script type="text/javascript" src="https://code.createjs.com/easeljs-0.8.1.min.js"></script> -->
+    <script type="text/paperscript" src="js/PaperScript.js" canvas="mote-canvas"></script>
+
+    <!--For all things Mote, including genetics, canvas and animation -->
     <script src="js/mote.js"></script>
 
-    </script>
   </body>
 </html>

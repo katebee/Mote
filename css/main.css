@@ -11,6 +11,10 @@ a {
   color: inherit;
 }
 
+a:hover, a:focus {
+  color: #3D1F00;
+}
+
 .header {
   font-family: 'Delius Swash Caps', cursive;
   background: #9DCDB5;
