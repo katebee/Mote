@@ -10,25 +10,6 @@ function responsiveCanvas() {
 
 }
 
-//MODULE FOR CLOCK - keeping clock components confined to local scope
-
-var Clock = (function () {
-  var displayTime = function() {
-      var currentTime = new Date();
-      var hours = currentTime.getHours();
-      var minutes = currentTime.getMinutes();
-      var seconds = currentTime.getSeconds();
-
-      var clockDiv = document.getElementById('clock');
-      clockDiv.innerText = hours + ":" + minutes + ":" + seconds;
-    }
-
-    return {
-    displayTime: displayTime //public method
-  };
-}()); // Immediately-Invoked-Function-Expression
-
-
 
 //SCRIPT FOR CANVAS DISPLAY - PHENOTYPE / GENE EXPRESSION
 
@@ -72,14 +53,9 @@ $(document).ready(function() {
 
   console.log("document is ready");
 
-  //Add the clock and update each second
-  Clock.displayTime();
-  setInterval(Clock.displayTime, 1000);
-
-
   draw();
 
-  //$("#start").on("click", draw());
+  //$("#start").trigger('show.mote', draw());
   $('#title-link').smoothScroll({offset: -109});
   $('#about-link').smoothScroll({offset: -40});
   $('#contact-link').smoothScroll({offset: -40});
