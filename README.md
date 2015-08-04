@@ -1,9 +1,10 @@
 # Mote
 ##Genetics in JavaScript
 
-See it in it's current broken state: http://katebee.github.io/Mote/
+See it in the current state: http://katebee.github.io/Mote/
 
 Partly inspired by the excellent article: 'DNA seen through the eyes of a coder' (http://ds9a.nl/amazing-dna/).
+Partly an opportunity to try out canvas and associated libraries.
 
 #### THE PLAN:
 
@@ -12,7 +13,7 @@ Partly inspired by the excellent article: 'DNA seen through the eyes of a coder'
 <li>Mote will begin with three genes, and also include start codons and stop codons.</li>
 <li>the genes will control the colour, size and ???</li>
 <li>Proteins are objects, normally with one major function.</li>
-<li>RNA polymerase (protein) has a function (transcribe) that takes the DNA variable as an argument, searches the string for a particular sequence (start codon) then attempts to read the string in three base blocks until it encounters a particualar sequence (stop codon).</li>
+<li>RNA polymerase (protein) has a function (transcribe) that takes the DNA variable as an argument, searches the string for a particular sequence (start codon) then attempts to read the string in three base blocks until it encounters a particular sequence (stop codon).</li>
 <li>rnaPolymerase.transcribe(DNA.sequence) will return mRNA.</li>
 <li>The ribosome object has a function (translate) that takes mRNA and produces the specified protein (object)</li>
 <li>the proteins have functions that effect the phenotype (observable qualities) of the cell (colour, size).</li>
